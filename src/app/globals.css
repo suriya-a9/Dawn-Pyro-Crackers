@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Nunito", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+li.list-group-item {
+  border: none;
+  padding-left: 0px;
+}
+
+h4.order-summary-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* 
+hr.cart-hr {
+  width: 18px;
+  height: 18px;
+} */
+
+.cart-item {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button.checkout-button {
+  width: 100%;
+  margin: 18px 0px;
+  background-color: #BB0000;
+  color: white;
+  font-weight: 600;
+  text-transform: capitalize;
+  border: none;
+}
+
+li.list-group-item.cart-item svg {
+  margin-top: 18px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light {
+  background: #BB0000;
+}
+
+.me-auto.navbar-nav a {
+  /* padding: 20px 45px; */
+  margin: 0px 35px;
+  color: white;
+}
+
+a.nav-text.nav-link {
+  margin-top: 12px;
+}
+
+a.navbar-brand {
+  color: white;
+}
+
+.carousel-indicators {
+  display: none !important;
+}
+
+a.carousel-control-prev {
+  display: none;
+}
+
+a.carousel-control-next {
+  display: none;
+}
+
+.night-crackers-head img {
+  width: 50px;
+  height: 50px;
+}
+
+.night-crackers-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.see-all {
+  text-align: right;
+}
+
+.see-all a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.see-all a:hover {
+  text-decoration: underline;
+}
+
+.night-crackers-head h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+section.night-crackers-section {
+  margin: 45px 0px;
+}
+
+.col-auto.see-all a {
+  color: #BB0000;
+}
+
+.col-auto.see-all a:hover {
+  text-decoration: none;
+}
+
+.cracker-list {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  padding-bottom: 0px;
+  margin-top: 50px;
+}
+
+.cracker-list img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.crackers-caption h4 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.rating {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+}
+
+.crackers-caption {
+  padding: 25px 0px;
+}
+
+.rating img {
+  width: 20px;
+  height: 20px;
+}
+
+h2.quickorder-heading {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+p.quickorder-heading-para {
+  font-style: italic;
+  font-size: 18px;
+  text-align: left;
+}

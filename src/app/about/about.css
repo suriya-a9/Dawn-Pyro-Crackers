@@ -1,0 +1,109 @@
+table#product-list thead th {
+    height: 45px;
+    text-align: center;
+    /* display: flex; */
+    background: #BB0000;
+    color: white;
+    padding-bottom: 10px;
+    width: 100px;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-color-type: var(--bs-table-striped-color);
+    --bs-table-bg-type: none;
+    --bs-border-width: 3px;
+}
+
+.table-striped tbody tr {
+    --bs-border-width: 3px;
+}
+
+table#product-list tbody td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+input.quantity-field {
+    width: 60px;
+}
+
+table#product-list {
+    border: 3px solid #f4f4f4;
+    height: 500px;
+    overflow-y: scroll;
+    display: block;
+}
+
+.table-striped tbody tr:hover {
+    background-color: transparent !important;
+}
+
+button.checkout-button:hover {
+    background-color: #BB0000 !important;
+    border: none;
+}
+
+td.table-product-name {
+    width: 450px;
+}
+
+ul#cart-list {
+    max-height: 350px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+ul#cart-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+ul#cart-list::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+ul#cart-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+table#product-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+table#product-list::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+table#product-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+section#checkout {
+    margin: 40px 0px;
+}
+
+.cart-list h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cart-price-listing h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
