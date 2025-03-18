@@ -15,7 +15,7 @@ export default function Home() {
 
   useEffect(() => {
     if (currentStep < 6) {
-      const timer = setTimeout(() => setCurrentStep(currentStep + 1), 5000);
+      const timer = setTimeout(() => setCurrentStep(currentStep + 1), 2000);
       return () => clearTimeout(timer);
     }
   }, [currentStep]);
